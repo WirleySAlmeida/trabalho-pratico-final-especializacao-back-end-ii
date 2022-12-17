@@ -1,4 +1,4 @@
-package com.dh.financeira;
+package com.dh.users;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

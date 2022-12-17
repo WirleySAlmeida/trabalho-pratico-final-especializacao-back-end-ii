@@ -1,4 +1,4 @@
-package com.dh.financeira.configuration.security;
+package com.dh.users.configuration.security;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;

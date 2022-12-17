@@ -1,10 +1,10 @@
-package com.example.msdiscovery;
+package com.dh.users;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MsDiscoveryApplicationTests {
+class UsersApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -1,26 +1,16 @@
 server:
   port: 9090
-eureka:
-  instance:
-    hostname: localhost
-    prefer-ip-address: true
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka
+
 spring:
-  application:
-    name: ms-gateway
   security:
     oauth2:
       client:
         provider:
-          api-gateway-provider:
+          api-gateway-service:
             issuer-uri: http://localhost:8082/realms/digitalhouse
         registration:
           api-gateway-registration:
-            provider: api-gateway-provider
+            provider: api-gateway-service
             client-id: gateway
             client-secret: pTGLI8eizjd5FXRBXBQTaEWMBzXIRVdz
             authorization-grant-type: authorization_code
@@ -33,4 +23,4 @@ spring:
         - id: ms-bills
           uri: http://localhost:8080
           predicates:
-            - Path=/petshop/**
+            - Path=/bills/**
