@@ -9,7 +9,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ms-bills" />
         <module name="ms-users" />
-        <module name="ms-discovery" />
         <module name="ms-gateway" />
       </profile>
     </annotationProcessing>
